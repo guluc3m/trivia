@@ -90,93 +90,93 @@
 
 #pregunta[
   - ¿Cómo se llama el creador de Linux?
-    1. John Linux
-    2. Linus Torvalds #si
-    3. Eugène de Lineaux
-    4. Juan
+    + John Linux
+    + Linus Torvalds #si
+    + Eugène de Lineaux
+    + Juan
 ]
 
 
 #pregunta[
   - ¿En qué año se fundó el GUL-UC3M?
-    1. 2012
-    2. 1995 #si
-    3. 69 A.D.
-    4. 2026
+    + 2012
+    + 1995 #si
+    + 69 A.D.
+    + 2026
 ]
 
 
 #pregunta[
   - ¿Cómo es el diagrama de Venn entre usuarios de Linux (varones) y Femboys?
-    1. Círculo perfecto
-    2. Círculo semiperfecto #si
-    3. Sólo se tocan la puntita
-    4. No hay relación
+    + Círculo perfecto
+    + Círculo semiperfecto #si
+    + Sólo se tocan la puntita
+    + No hay relación
 ]
 
 #pregunta[
   - ¿Puedes jugar a todos tus juegos favoritos en Linux?
-    1. ¡Si!
-    2. Si\* #si
-    3. No
-    4. Microslop nunca lo permitirá
+    + ¡Si!
+    + Si\* #si
+    + No
+    + Microslop nunca lo permitirá
 ]
 
 #pregunta[
   - ¿Qué animal es la mascota de Linux?
-    1. Rata #emoji.rat
-    2. Perro #emoji.dog
-    3. Gato #emoji.cat
-    4. Pingüino #emoji.penguin #si
+    + Rata #emoji.rat
+    + Perro #emoji.dog
+    + Gato #emoji.cat
+    + Pingüino #emoji.penguin #si
 ]
 
 #pregunta[
   - ¿Cómo se llama la mascota de Linux?
-    1. Tux #si
-    2. Keith
-    3. Linus
-    4. Juan
+    + Tux #si
+    + Keith
+    + Linus
+    + Juan
 ]
 
 #pregunta[
   - ¿Qué porcentaje de cuota de mercado tiene Linux en *escritorio*?
-    1. ~5% #si
-    2. ~50%
-    3. ~90%
-    4. ~100%
+    + ~5% #si
+    + ~50%
+    + ~90%
+    + ~100%
 ]
 
 #pregunta[
   - ¿Qué porcentaje de cuota de mercado tiene Linux en *servidor*?
-    1. ~5%
-    2. ~50%
-    3. ~90% #si
-    4. ~100%
+    + ~5%
+    + ~50%
+    + ~90% #si
+    + ~100%
 ]
 
 #pregunta[
   - ¿Qué porcentaje de cuota de mercado tiene Linux en *supercomputadores*?
-    1. ~5%
-    2. ~50%
-    3. ~90%
-    4. ~100% #si
+    + ~5%
+    + ~50%
+    + ~90%
+    + ~100% #si
 ]
 
 #pregunta[
   - ¿Con qué está hecha esta presentación?
-    1. Google Slides
-    2. Microsoft PowerPoint
-    3. #LaTeX
-    4. Typst #si
+    + Google Slides
+    + Microsoft PowerPoint
+    + #LaTeX
+    + Typst #si
 ]
 
 
 #pregunta[
   - ¿Cual es mi color favorito?
-    1. Rojo
-    2. Azul
-    3. Cyan #si
-    4. Ultravioleta
+    + Rojo
+    + Azul
+    + Cyan #si
+    + Ultravioleta
 ]
 
 
