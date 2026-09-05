@@ -5,7 +5,7 @@
 This presentation uses [Touying](https://touying-typ.github.io/), a [Typst](https://typst.app) presentation package.  
 You first need to install the [Typst](https://typst.app) compiler.
 
-Handout (default) mode:
+Presentation (default) mode:
 ```
 typst c trivia.typ
 ```
