@@ -98,7 +98,7 @@
 #pregunta[
   - ¿En qué año se fundó el GUL-UC3M?
     1. 2012
-    2. 1997 #si
+    2. 1995 #si
     3. 69 A.D.
     4. 2026
 ]
