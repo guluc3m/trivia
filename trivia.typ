@@ -4,6 +4,7 @@
 #import "@preview/touying:0.7.4": *
 #import "@preview/grayness:0.7.0": image-transparency
 #import "@preview/metalogo:1.2.0": LaTeX
+#import "@preview/gentle-clues:1.3.1": *
 
 #import themes.simple: *
 
@@ -27,7 +28,7 @@
   footer: [#org --- #title],
   primary: primary-color,
   config-common(
-    handout: handout-mode
+    handout: handout-mode,
   ),
 )
 
@@ -37,7 +38,7 @@
   place(
     top + center,
     image-transparency(
-      read("gul-logo.svg", encoding: none),
+      read("img/gul-logo.svg", encoding: none),
       alpha: 30%,
       format: "svg",
     ),
@@ -71,7 +72,7 @@
 
 #let i = state("pregunta", 1)
 #let pregunta(body, num-subslides: 2) = {
-[== *Pregunta #context { i.get() }*]
+  [== *Pregunta #context { i.get() }*]
   parbreak()
   body
 
@@ -84,16 +85,20 @@
 #let si = uncover("2-")[#emoji.checkmark.box]
 #let no = uncover("2-")[#emoji.crossmark]
 #let ma-o-menon = uncover("2-")[#emoji.hand.pinch]
+#let apunte = uncover.with("2-")
 
 
 // LTeX: enabled=true
 
 #pregunta[
   - ¿Cómo se llama el creador de Linux?
-    + John Linux
-    + Linus Torvalds #si
-    + Eugène de Lineaux
-    + Juan
+    + 🇺🇸 John Linux
+    + 🇫🇮 Linus Torvalds#si
+    + 🇫🇷 Eugène de Lineaux
+    + 🇨🇺 Juan
+
+    #apunte(info[Linux fue lanzado en 1991, cuando Torvalds estaba todavía en la
+      universidad. ¡Como tú!])
 ]
 
 
@@ -103,6 +108,8 @@
     + 1995 #si
     + 69 A.D.
     + 2026
+
+    #apunte(figure(image("img/gul-horizontal.svg", width: 60%)))
 ]
 
 
@@ -112,6 +119,8 @@
     + Círculo semiperfecto #si
     + Sólo se tocan la puntita
     + No hay relación
+
+    #apunte(figure(image("img/unixsocks.png", width: 49%)))
 ]
 
 #pregunta[
@@ -120,22 +129,33 @@
     + Si\* #si
     + No
     + Microslop nunca lo permitirá
+
+    #apunte(figure(image("img/protondb.png", width: 53%)))
 ]
 
 #pregunta[
   - ¿Qué animal es la mascota de Linux?
-    + Rata #emoji.rat
-    + Perro #emoji.dog
-    + Gato #emoji.cat
-    + Pingüino #emoji.penguin #si
+    + #emoji.rat Rata
+    + #emoji.dog Perro
+    + #emoji.cat Gato
+    + #emoji.penguin Pingüino #si
+
+    #apunte(quotation(title: "Linus Torvalds dijo...")[_Some people have told me they don't think a fat penguin really embodies the grace of Linux, which just tells me they have never seen an angry penguin charging at them in excess of 100 mph._])
 ]
 
 #pregunta[
   - ¿Cómo se llama la mascota de Linux?
     + Tux #si
     + Keith
-    + Linus
+    + Ling
     + Juan
+
+    #apunte(notify(title: "Dato curioso", grid(
+      columns: (1fr, 1fr),
+      [_Keith_ es la mascota no oficial de C++],
+      figure(image("img/keith.png", height: 3.5cm)),
+    )))
+
 ]
 
 #pregunta[
@@ -144,6 +164,8 @@
     + ~50%
     + ~90%
     + ~100%
+
+    #apunte(info[¡En móviles, Android (basado en Linux) tiene \~70%!])
 ]
 
 #pregunta[
@@ -168,15 +190,26 @@
     + Microsoft PowerPoint
     + #LaTeX
     + Typst #si
+
+    #apunte[
+      #v(1em)
+      #figure(image("img/repo.svg", width: 80%))
+    ]
 ]
 
 
 #pregunta[
   - ¿Cual es mi color favorito?
-    + Rojo
-    + Azul
-    + Cyan #si
-    + Ultravioleta
+    + #emoji.circle.red Rojo
+    + #emoji.circle.blue Azul
+    + #emoji.circle.green #emoji.circle.blue Cyan
+    + #emoji.circle.white Ultravioleta
+
+    #pause
+
+    #abstract(title: "Nota")[El autor de esta presentación puede no ser el mismo que
+      te esté haciendo las preguntas, por lo que no sabe la respuesta de
+      antemano.]
 ]
 
 
@@ -199,13 +232,13 @@
 }
 
 #ronda-rapida([¿Software Libre o no?], (
-  ([Linux], true),
-  ([Windows], false),
-  ([MacOS], false),
-  ([Microsoft Office], false),
-  ([OBS], true),
-  ([Visual Studio Code], none),
-  ([Obsidian], false),
-  ([Google Chrome], none),
-  ([Firefox], true),
+  ([#emoji.penguin Linux], true),
+  ([#emoji.window Windows], false),
+  ([#emoji.apple MacOS], false),
+  ([#emoji.briefcase Microsoft Office], false),
+  ([#emoji.camera.video OBS], true),
+  ([#emoji.laptop Visual Studio Code], none),
+  ([#emoji.notepad Obsidian], false),
+  ([#emoji.globe Google Chrome], none),
+  ([#emoji.fox Firefox], true),
 ))
