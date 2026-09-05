@@ -3,6 +3,8 @@
 
 #import "@preview/touying:0.7.4": *
 #import "@preview/grayness:0.7.0": image-transparency
+#import "@preview/metalogo:1.2.0": LaTeX
+
 #import themes.simple: *
 
 
@@ -159,6 +161,15 @@
     3. ~90%
     4. ~100% #si
 ]
+
+#pregunta[
+  - ¿Con qué está hecha esta presentación?
+    1. Google Slides
+    2. Microsoft PowerPoint
+    3. #LaTeX
+    4. Typst #si
+]
+
 
 #pregunta[
   - ¿Cual es mi color favorito?
