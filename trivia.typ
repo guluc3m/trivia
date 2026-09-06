@@ -11,7 +11,7 @@
 
 /* CONFIG */
 
-#set text(lang: "es")
+#set text(lang: "es", font: "Trebuchet MS")
 
 #let primary-color = rgb("#1c3144")
 #let title = [Trivia Jornadas de Bienvenida]
@@ -25,7 +25,7 @@
 #show: simple-theme.with(
   aspect-ratio: "4-3",
   header: none,
-  footer: [#org --- #title],
+  footer: [#org],
   primary: primary-color,
   config-common(
     handout: handout-mode,
@@ -73,7 +73,6 @@
 #let i = state("pregunta", 1)
 #let pregunta(body, num-subslides: 2) = {
   [== *Pregunta #context { i.get() }*]
-  parbreak()
   body
 
   // update counter (only on last subslide)
@@ -124,7 +123,7 @@
     + Sólo se tocan la puntita
     + No hay relación
 
-    #apunte(figure(image("img/unixsocks.png", width: 49%)))
+    #apunte(figure(image("img/unixsocks.png", width: 47%)))
 ]
 
 #pregunta[
@@ -134,7 +133,7 @@
     + No
     + Microslop nunca lo permitirá
 
-    #apunte(figure(image("img/protondb.png", width: 53%)))
+    #apunte(figure(image("img/protondb.png", width: 52%)))
 ]
 
 #pregunta[
@@ -144,6 +143,7 @@
     + #emoji.cat Gato
     #correcta[+ #emoji.penguin Pingüino]
 
+    #set text(size: .9em)
     #apunte(quotation(title: "Linus Torvalds dijo...")[_Some people have told me
     they don't think a fat penguin really embodies the grace of Linux, which
     just tells me they have never seen an angry penguin charging at them in
@@ -257,3 +257,13 @@
   ([#emoji.globe Google Chrome], none),
   ([#emoji.fox Firefox], true),
 ))
+
+#my-title-slide[
+  = ¡Gracias por participar!
+
+  #v(1em)
+
+  GUL-UC3M
+
+  \@guluc3m
+]
