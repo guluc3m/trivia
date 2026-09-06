@@ -82,10 +82,14 @@
   )
 }
 
-#let si = uncover("2-")[#emoji.checkmark.box]
-#let no = uncover("2-")[#emoji.crossmark]
-#let ma-o-menon = uncover("2-")[#emoji.hand.pinch]
 #let apunte = uncover.with("2-")
+
+#let correcta(answer) = {
+  alternatives(answer, {
+    show enum.item: strong.with(delta: 600)
+    answer
+  })
+}
 
 
 // LTeX: enabled=true
@@ -93,7 +97,7 @@
 #pregunta[
   - ¿Cómo se llama el creador de Linux?
     + 🇺🇸 John Linux
-    + 🇫🇮 Linus Torvalds#si
+    #correcta[+ 🇫🇮 Linus Torvalds]
     + 🇫🇷 Eugène de Lineaux
     + 🇨🇺 Juan
 
@@ -105,7 +109,7 @@
 #pregunta[
   - ¿En qué año se fundó el GUL-UC3M?
     + 2012
-    + 1995 #si
+    #correcta[+ 1995]
     + 69 A.D.
     + 2026
 
@@ -116,7 +120,7 @@
 #pregunta[
   - ¿Cómo es el diagrama de Venn entre usuarios de Linux y _femboys_?
     + Círculo perfecto
-    + Círculo semiperfecto #si
+    #correcta[+ Círculo semiperfecto]
     + Sólo se tocan la puntita
     + No hay relación
 
@@ -126,7 +130,7 @@
 #pregunta[
   - ¿Puedes jugar a todos tus juegos favoritos en Linux?
     + ¡Si!
-    + Si\* #si
+    #correcta[+ Si\*]
     + No
     + Microslop nunca lo permitirá
 
@@ -138,14 +142,17 @@
     + #emoji.rat Rata
     + #emoji.dog Perro
     + #emoji.cat Gato
-    + #emoji.penguin Pingüino #si
+    #correcta[+ #emoji.penguin Pingüino]
 
-    #apunte(quotation(title: "Linus Torvalds dijo...")[_Some people have told me they don't think a fat penguin really embodies the grace of Linux, which just tells me they have never seen an angry penguin charging at them in excess of 100 mph._])
+    #apunte(quotation(title: "Linus Torvalds dijo...")[_Some people have told me
+    they don't think a fat penguin really embodies the grace of Linux, which
+    just tells me they have never seen an angry penguin charging at them in
+    excess of 100 mph._])
 ]
 
 #pregunta[
   - ¿Cómo se llama la mascota de Linux?
-    + Tux #si
+    #correcta[+ Tux]
     + Keith
     + Ling
     + Juan
@@ -160,7 +167,7 @@
 
 #pregunta[
   - ¿Qué porcentaje de cuota de mercado tiene Linux en *escritorio*?
-    + ~5% #si
+    #correcta[+ ~5%]
     + ~50%
     + ~90%
     + ~100%
@@ -172,7 +179,7 @@
   - ¿Qué porcentaje de cuota de mercado tiene Linux en *servidor*?
     + ~5%
     + ~50%
-    + ~90% #si
+    #correcta[+ ~90%]
     + ~100%
 ]
 
@@ -181,7 +188,7 @@
     + ~5%
     + ~50%
     + ~90%
-    + ~100% #si
+    #correcta[+ ~100%]
 ]
 
 #pregunta[
@@ -189,7 +196,7 @@
     + Google Slides
     + Microsoft PowerPoint
     + #LaTeX
-    + Typst #si
+    #correcta[+ Typst]
 
     #apunte[
       #figure(image("img/repo.png", width: 60%))
@@ -206,13 +213,20 @@
 
     #pause
 
-    #abstract(title: "Nota")[El autor de esta presentación puede no ser el mismo que
-      te esté haciendo las preguntas, por lo que no sabe la respuesta de
+    #abstract(title: "Nota")[El autor de esta presentación puede no ser el mismo
+      que te esté haciendo las preguntas, por lo que no sabe la respuesta de
       antemano.]
 ]
 
 
+/* RONDA RÁPIDA */
+
 // LTeX: enabled=false
+
+#let si = uncover("2-")[#emoji.checkmark.box]
+#let no = uncover("2-")[#emoji.crossmark]
+#let ma-o-menon = uncover("2-")[#emoji.hand.pinch]
+
 #let ronda-rapida(title, apps) = {
   [== *Ronda rápida: #title*]
   let is-fs(value) = {
