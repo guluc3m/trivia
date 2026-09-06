@@ -203,6 +203,19 @@
     ]
 ]
 
+#pregunta[
+  - ¿Cuál de estos sistemas NO puede correr linux?
+    + Wii
+    + Un Mac
+    + El GPS de un coche
+    + Una tostadora
+    #correcta[+ Todo corre linux: con paciencia y con saliva, el elefante se la metió a la hormiga]
+
+    #apunte[
+      #figure(image("img/repo.png", width: 60%))
+    ]
+]
+
 
 #pregunta[
   - ¿Cual es mi color favorito?
