@@ -114,7 +114,7 @@
 
 
 #pregunta[
-  - ¿Cómo es el diagrama de Venn entre usuarios de Linux (varones) y Femboys?
+  - ¿Cómo es el diagrama de Venn entre usuarios de Linux y _femboys_?
     + Círculo perfecto
     + Círculo semiperfecto #si
     + Sólo se tocan la puntita
@@ -192,8 +192,7 @@
     + Typst #si
 
     #apunte[
-      #v(1em)
-      #figure(image("img/repo.svg", width: 80%))
+      #figure(image("img/repo.png", width: 60%))
     ]
 ]
 
@@ -232,13 +231,15 @@
 }
 
 #ronda-rapida([¿Software Libre o no?], (
-  ([#emoji.penguin Linux], true),
   ([#emoji.window Windows], false),
+  ([#emoji.penguin Linux], true),
   ([#emoji.apple MacOS], false),
-  ([#emoji.briefcase Microsoft Office], false),
+  // ([#emoji.briefcase Microsoft Office], false),
+  ([#emoji.palette Blender], true),
   ([#emoji.camera.video OBS], true),
   ([#emoji.laptop Visual Studio Code], none),
   ([#emoji.notepad Obsidian], false),
+  ([#emoji.mortarboard OpenUC3M], false),
   ([#emoji.globe Google Chrome], none),
   ([#emoji.fox Firefox], true),
 ))
