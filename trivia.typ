@@ -89,16 +89,10 @@
 
 /* PORTADA */
 
-
-#my-title-slide[
-  #heading(strong(title), outlined: false)
-  #v(2em)
-
-  #v(1em)
-
-  #link("https://gul.uc3m.es", org)
-
-  10 de Septiembre 2026
+#title-slide[
+  #image("img/portada.png", width: 122%)
+  #set text(font: "Arial")
+  (buscamos diseñador gráfico)
 ]
 
 
