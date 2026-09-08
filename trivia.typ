@@ -149,6 +149,18 @@
   #apunte(image("img/gul-horizontal.svg", width: 57%))
 ]
 
+#pregunta[
+  - ¿Cuál de estas distros no es real?
+    + AmogOS
+    #correcta[TetOS]
+    + Nyarch
+    + UwUntu
+    + Lesbian
+
+]
+
+
+
 
 #pregunta[
   - ¿Cómo es el diagrama de Venn entre usuarios de Linux y _femboys_?
